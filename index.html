@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cifrador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+        <header>
+                <img src="imagenes/Logo.png" class="logo" alt="Logo de Alura">
+        </header>
+        
+        <main>
+            <div class="container">
+                <section class="crypt-section">
+                    <div>
+                        <textarea id="input-text" cols="30" rows="10" class="text-area-input" placeholder="Ingresa el texto aquí"></textarea>
+                    </div>
+                    <div>
+                        <h1 class="info"><img src="imagenes/bi_exclamation-circle-fill.png" alt="Alerta"> Solo letras minúsculas y sin acento.</h1>
+                    </div>
+                    <div class="buttons">
+                        <buttoon class="btn-crypt" onclick="btnEncrypt()">Encriptar</buttoon>
+                        <buttoon class="btn-decrypt" onclick="btnDecrypt()">Desencriptar</buttoon>
+                    </div>
+                </section>
+                <section class="decrypt-section">
+                    <div>
+                        <textarea id="output-text" cols="20" rows="10" class="text-area-output"></textarea>
+                        <h1 id="paragraph-1" class="placeholder-1">Ningún mensaje fue<br>encontrado.</h1>
+                        <h2 id="paragraph-2" class="placeholder-2">Ingresa el texto que desees encriptar o<br>desencriptar.</h1>
+                        <button id="btn-copy" class="btn-copy" onclick="btnCopy()">Copiar</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <small>© Copyright - 2024 | 474N</small>
+            <div class="social">
+                <a href="https://github.com/474N" target="_blank" rel="noopener noreferrer" title="Perfil en GitHub">
+                    <i style="color: #0A3871;" class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alan-figueroa-martinez/" target="_blank" rel="noopener noreferrer" title="Perfil en Linkedin">
+                    <i style="color: #0A3871;" class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </footer>
+</body>
+<script src="index.js"></script>
+</html>
